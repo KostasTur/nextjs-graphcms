@@ -18,7 +18,7 @@ const PostDetail = ({ post }) => {
 				modifiedText = <u key={index}>{text}</u>;
 			}
 		}
-		console.log(type);
+
 		switch (type) {
 			case 'paragraph':
 				return (

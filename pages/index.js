@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { PostCard, Categories, PostWidget } from '../components';
+import Loader from '../components/Loader';
 import { getPosts } from '../services';
 // const posts = [
 // 	{ title: 'first Post', excerpt: 'lorem ipsum lorem ipsum lorem ipsum' },
