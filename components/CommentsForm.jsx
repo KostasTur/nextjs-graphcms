@@ -6,9 +6,9 @@ const CommentsForm = ({ slug }) => {
 	// const [localStorage, setLocalStorage] = useState(null);
 	const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 	const [formData, setFormData] = useState({
-		name: null,
-		email: null,
-		comment: null,
+		name: '',
+		email: '',
+		comment: '',
 		storeData: false,
 	});
 
