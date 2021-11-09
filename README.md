@@ -1,6 +1,6 @@
 # Next.js + graphCMS + Tailwind CSS Demo Blog
 
-!(./preview/preview-home.png)
+![Home Page](./preview/preview-home.png)
 
 ## [View Deployed site](https://blog-with-nextjs-graphcms.vercel.app/)🥳
 
