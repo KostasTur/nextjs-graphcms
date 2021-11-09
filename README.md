@@ -1,6 +1,8 @@
 # Next.js + graphCMS + Tailwind CSS Demo Blog
 
-## Deployed on vercel [Click Me] (https://blog-with-nextjs-graphcms.vercel.app/
+## Deployed on vercel
+
+[View Deployed site] (https://blog-with-nextjs-graphcms.vercel.app/
 
 )🥳
 
