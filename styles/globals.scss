@@ -16,14 +16,20 @@ body {
 		height: 100vh;
 		//background: linear-gradient(to right bottom, #6d327c, #485DA6, #00a1ba, #01b18e, #32b37b);
 		// background: #D3D3D3;
-		background-image: url('../public/bg.jpeg');
+		// background-image: url('../public/bg-patern.png');
+		background: rgb(63, 94, 251);
+		background: radial-gradient(
+			circle,
+			rgba(63, 94, 251, 1) 0%,
+			rgba(252, 70, 107, 1) 100%
+		);
 		position: fixed;
 		left: 0;
 		top: 0;
 		z-index: -1;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
+		// background-position: 50% 50%;
+		// background-repeat: repeat;
+		// background-size: contain;
 	}
 }
 
