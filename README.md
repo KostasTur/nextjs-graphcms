@@ -1,5 +1,7 @@
 # Next.js + graphCMS + Tailwind CSS Demo Blog
 
+!(./preview/preview-home.png)
+
 ## [View Deployed site](https://blog-with-nextjs-graphcms.vercel.app/)🥳
 
 Thanks vercel for such a smooth dev experience!
