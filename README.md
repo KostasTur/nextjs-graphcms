@@ -1,14 +1,12 @@
 # Next.js + graphCMS + Tailwind CSS Demo Blog
 
-## Deployed on vercel
+## [View Deployed site](https://blog-with-nextjs-graphcms.vercel.app/)🥳
 
-[View Deployed site] (https://blog-with-nextjs-graphcms.vercel.app/
-
-)🥳
+Thanks vercel for such a smooth dev experience!
 
 ## Description
 
-A basic web blog using content management system graphCMS (https://graphcms.com/)
+A basic web blog using content management system [graphCMS](https://graphcms.com/)
 
 ### Functionality:
 
