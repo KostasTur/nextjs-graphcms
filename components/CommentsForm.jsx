@@ -119,6 +119,7 @@ const CommentsForm = ({ slug }) => {
 				>
 					Comment
 				</button>
+
 				{showSuccessMessage && (
 					<span className='text-lg mt-1 float-right font-semibold text-green-500 border-green-500 rounded-lg'>
 						Comment submited for review!

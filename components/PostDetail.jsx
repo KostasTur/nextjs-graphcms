@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import moment from 'moment';
-import Prism from 'prismjs';
+import dynamic from 'next/dynamic';
 
+const DynamicCodeBlock = dynamic(() => import('./CodeBlock.jsx'), {
+	ssr: false,
+});
 const PostDetail = ({ post }) => {
-	useEffect(() => {
-		Prism.highlightAll();
-	}, []);
 	const getContentFragment = (index, text, obj, type) => {
 		let modifiedText = text;
 
@@ -26,14 +26,8 @@ const PostDetail = ({ post }) => {
 		switch (type) {
 			// code component 👀 let's try to style it :))
 			case 'code-block':
-				return (
-					<pre
-						key={index}
-						className='language-javascript mb-8 w-full overflow-x-auto rounded-lg'
-					>
-						<code dangerouslySetInnerHTML={{ __html: text }}></code>
-					</pre>
-				);
+				return <DynamicCodeBlock key={index} index={index} text={text} />;
+
 			case 'paragraph':
 				return (
 					<p key={index} className='mb-8'>
@@ -90,6 +84,7 @@ const PostDetail = ({ post }) => {
 						height={obj.height}
 						width={obj.width}
 						src={obj.src}
+						className='rounded-lg'
 					/>
 				);
 			default:
