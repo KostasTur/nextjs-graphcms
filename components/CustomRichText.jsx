@@ -3,8 +3,6 @@ import { RichText } from '@graphcms/rich-text-react-renderer';
 import Image from 'next/image';
 import Prism from 'prismjs';
 
-import 'prismjs/themes/prism-tomorrow.css';
-
 const CustomRichText = ({ content }) => {
 	useEffect(() => {
 		Prism.highlightAll();
