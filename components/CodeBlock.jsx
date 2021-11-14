@@ -5,6 +5,7 @@ const CodeBlock = ({ text }) => {
 	useEffect(() => {
 		Prism.highlightAll();
 	}, []);
+	console.log(text);
 	return (
 		<pre className='language-javascript mb-8 w-full overflow-x-auto rounded-lg'>
 			<code dangerouslySetInnerHTML={{ __html: text }}></code>

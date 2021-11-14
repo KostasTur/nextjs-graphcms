@@ -11,6 +11,7 @@ import {
 	CommentsForm,
 	Loader,
 } from '../../components';
+import PostDetailsv2 from '../../components/PostDetailV2';
 
 const PostDetails = ({ post }) => {
 	const router = useRouter();
@@ -22,7 +23,7 @@ const PostDetails = ({ post }) => {
 		<div className='container mx-auto px-10 mb-8'>
 			<div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
 				<div className='col-span-1 lg:col-span-8 '>
-					<PostDetail post={post} />
+					<PostDetailsv2 post={post} />
 					<Author author={post.author} />
 					<Comments slug={post.slug} />
 					<CommentsForm slug={post.slug} />
