@@ -35,7 +35,6 @@ export default async function asynchandler(req, res) {
 		const result = await graphQLClient.request(query, req.body);
 		return res.status(200).send(result);
 	} catch (error) {
-		console.log(error);
 		res.status(400);
 	}
 }

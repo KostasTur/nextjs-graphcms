@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import Image from 'next/image';
 import Prism from 'prismjs';
+import Link from 'next/link';
 
 const CustomRichText = ({ content }) => {
 	useEffect(() => {
 		Prism.highlightAll();
 	}, []);
-	console.log(content);
 
 	return (
 		<RichText
