@@ -1,27 +1,30 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@graphcms/rich-text-react-renderer": "^0.3.2",
-    "graphql": "^15.7.2",
-    "graphql-request": "^3.6.1",
-    "highlight.js": "^11.3.1",
-    "html-react-parser": "^1.4.0",
-    "moment": "^2.29.1",
-    "next": "latest",
-    "prismjs": "^1.25.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
-    "sass": "^1.43.4"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4"
-  }
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@graphcms/rich-text-react-renderer": "^0.3.2",
+		"graphql": "^15.7.2",
+		"graphql-request": "^3.6.1",
+		"highlight.js": "^11.3.1",
+		"html-react-parser": "^1.4.0",
+		"moment": "^2.29.1",
+		"next": "latest",
+		"prism": "^4.1.2",
+		"prismjs": "^1.25.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-icons": "^4.3.1",
+		"remark": "^14.0.1",
+		"remark-html": "^15.0.0",
+		"sass": "^1.43.4"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.6",
+		"postcss": "^8.3.5",
+		"tailwindcss": "^2.2.4"
+	}
 }
