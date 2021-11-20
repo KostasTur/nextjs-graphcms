@@ -3,8 +3,9 @@ import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';
 
 export default function Home({ posts }) {
+	console.log(posts);
 	return (
-		<div className='container mx-auto px-10 mb-8 '>
+		<div className='container mx-auto px-1 md10s mb-8 '>
 			<Head>
 				<title>Demo Blog</title>
 				<link rel='icon' href='/favicon.ico' />
