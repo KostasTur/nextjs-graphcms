@@ -23,9 +23,8 @@ const PostDetail = ({ post }) => {
 				modifiedText = <u key={index}>{text}</u>;
 			}
 		}
-
+		// code component 👀 let's try to style it :))
 		switch (type) {
-			// code component 👀 let's try to style it :))
 			case 'code-block':
 				return <DynamicCodeBlock key={index} index={index} text={text} />;
 
@@ -141,7 +140,6 @@ const PostDetail = ({ post }) => {
 					const children = typeObj.children.map((item, itemindex) =>
 						getContentFragment(itemindex, item.text, item)
 					);
-
 					return getContentFragment(index, children, typeObj, typeObj.type);
 				})}
 			</div>

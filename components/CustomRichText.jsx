@@ -13,6 +13,7 @@ const CustomRichText = ({ content }) => {
 		<RichText
 			content={content}
 			renderers={{
+				p: ({ children }) => <h2 className='mb-8'>{children}</h2>,
 				h1: ({ children }) => (
 					<h2 className='text-3xl font-semibold mb-4'>{children}</h2>
 				),
@@ -60,14 +61,16 @@ const CustomRichText = ({ content }) => {
 					);
 				},
 				img: ({ src, altText, height, width }) => (
-					<Image
-						src={src}
-						alt={altText}
-						height={height}
-						width={width}
-						objectFit='cover'
-						className='rounded-lg'
-					/>
+					<div className='rounded-lg my-6'>
+						<Image
+							src={src}
+							alt={altText}
+							height={height}
+							width={width}
+							objectFit='cover'
+							className='rounded-lg'
+						/>
+					</div>
 				),
 				code: ({ children }) => {
 					return (
